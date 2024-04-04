@@ -2,7 +2,9 @@
 *{
     font-family: "Merienda", cursive;
     margin: 0;
+    color: #eeee;
 }
+
 
 .main {
     height: 100vh;
@@ -14,6 +16,18 @@
 
 .main h1{
     margin: 2rem;
+}
+
+#bodyIndex{
+    background-image: url('img/trago.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+
 }
 
 .publicacion{
@@ -33,6 +47,7 @@
     text-align: center;
     margin-bottom: 2em;
 }
+
 
 /* Promociones */
 .card{
@@ -56,5 +71,20 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: .5rem;
     height: 85%;
-
+}
+/* Noticias */
+#noticias{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+.noticia{
+    width: 30%;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 5em;
+    text-align: center;
 }
