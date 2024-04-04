@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+.publicacion{
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(218, 218, 218);
+    margin: 0 auto;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+#blogheader{
+    background-color: rgb(241, 240, 240);
+    box-shadow: 0 0 10px rgb(206, 206, 206);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 2em;
+}
