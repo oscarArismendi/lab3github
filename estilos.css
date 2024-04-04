@@ -1,6 +1,19 @@
 *{
     margin: 0;
+    color: #eeee;
 }
+
+#bodyIndex{
+    background-image: url('img/trago.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    margin: 0; 
+    padding: 0; 
+    height: 100vh; 
+}
+
 .publicacion{
     width: 50%;
     height: 50vh;
