@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Rowdies:wght@300;400;700&display=swap');
 *{
+    font-family: "Merienda", cursive;
     margin: 0;
     color: #eeee;
+}
+
+
+.main {
+    height: 100vh;
+    background-color: rgb(176, 255, 225);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1{
+    margin: 2rem;
 }
 
 #bodyIndex{
@@ -12,6 +27,7 @@
     margin: 0; 
     padding: 0; 
     height: 100vh; 
+
 }
 
 .publicacion{
@@ -32,6 +48,31 @@
     margin-bottom: 2em;
 }
 
+
+/* Promociones */
+.card{
+    background: rgb(125, 255, 212);
+    width: 40em;
+    height: 20em;
+    border-radius: 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.card h3{
+    margin: 1rem;
+}
+
+.card-promo{
+    margin: 1rem;
+    background: rgb(176, 255, 225);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: .5rem;
+    height: 85%;
+}
+/* Noticias */
 #noticias{
     display: flex;
     flex-direction: row;
