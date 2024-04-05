@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    color: #eeee;
+    padding: 0;
 }
 
 #bodyIndex{
@@ -13,6 +13,72 @@
     padding: 0; 
     height: 100vh; 
 }
+
+/*---------------------- HEADER ----------------------------------*/
+
+#header-principal{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    padding: 30px 20px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.7s;
+    position: fixed;
+    z-index: 10;
+}
+
+#header-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-principal .nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-principal .nav .nav-list{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#header-principal .nav .nav-list li{
+    list-style: none;
+}
+
+#header-principal .nav .nav-list li a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+#header-principal .nav .nav-list li:hover{
+    background-color: green;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+    color: black;
+}
+
+/* ------------------------------------ */
 
 .publicacion{
     width: 50%;
