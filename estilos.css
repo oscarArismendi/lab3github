@@ -210,6 +210,36 @@
     text-shadow:  0 0 10px whitesmoke;;
 }
 
+/* --------------TESTIMONIOS---------------------- */
+
+#testimonios{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.testimonio{
+    width: 90%;
+    height: 100PX;
+    background-color: rgb(204, 202, 202);
+    margin-bottom: 3px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 5px rgb(117, 117, 117);
+}
+
+.sabermasb{
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #83807a;
+    text-decoration: none;
+    padding: 3px;
+    margin-top: 5px;
+}
+
 /* --------------HISTORIAL---------------------- */
 #historialheader{
     background-color: rgb(241, 240, 240);
