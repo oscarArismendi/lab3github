@@ -284,3 +284,23 @@
 .container-form .btn-enviar:hover{
     background: #e39403;
 }
+
+/* acerca.html sobre nosotros */
+
+#section-about{
+    width: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-text{
+    font-size: 25px
+}
+
+#about-img img{
+    width: 1000px;
+    height: 600px;
+}
