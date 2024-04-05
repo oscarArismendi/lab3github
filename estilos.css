@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Rowdies:wght@300;400;700&display=swap');
-*{
+
+* {
     font-family: "Merienda", cursive;
     margin: 0;
     padding: 0;
@@ -14,25 +15,25 @@
     align-items: center;
 }
 
-.main h1{
+.main h1 {
     margin: 2rem;
 }
 
-#bodyIndex{
+#bodyIndex {
     background-image: url('img/trago.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    
-    margin: 0; 
-    padding: 0; 
-    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 
 }
 
 /*---------------------- HEADER ----------------------------------*/
 
-#header-principal{
+#header-principal {
     width: 100%;
     height: 70px;
     top: 0;
@@ -47,31 +48,31 @@
     z-index: 10;
 }
 
-#header-principal{
+#header-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header-principal .nav{
+#header-principal .nav {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#header-principal .nav .nav-list{
+#header-principal .nav .nav-list {
     position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-#header-principal .nav .nav-list li{
+#header-principal .nav .nav-list li {
     list-style: none;
 }
 
-#header-principal .nav .nav-list li a{
+#header-principal .nav .nav-list li a {
     position: relative;
     margin: 0 10px;
     text-decoration: none;
@@ -81,11 +82,12 @@
     transition: 0.7s;
 }
 
-#header-principal .nav .nav-list li:hover{
+#header-principal .nav .nav-list li:hover {
     background-color: green;
 }
 
-.abrir-menu, .cerrar-menu{
+.abrir-menu,
+.cerrar-menu {
     display: none;
     border: 0;
     font-size: 1.25rem;
@@ -96,7 +98,7 @@
 
 /* --------------BLOG---------------------- */
 
-.publicacion{
+.publicacion {
     width: 50%;
     height: 50vh;
     background-color: rgb(218, 218, 218);
@@ -105,7 +107,7 @@
     text-align: center;
 }
 
-#blogheader{
+#blogheader {
     background-color: rgb(241, 240, 240);
     box-shadow: 0 0 10px rgb(206, 206, 206);
     width: 100%;
@@ -116,7 +118,7 @@
 
 /* --------------ayuda---------------------- */
 
-#ayudaheader{
+#ayudaheader {
     background-color: rgb(241, 240, 240);
     box-shadow: 0 0 10px rgb(206, 206, 206);
     width: 100%;
@@ -128,7 +130,7 @@
     font-size: 20px;
 }
 
-#mainayuda{
+#mainayuda {
     display: flex;
     flex-direction: column;
     height: 80vh;
@@ -139,7 +141,7 @@
     background-color: rgb(233, 226, 226);
 }
 
-.preguntaayuda{
+.preguntaayuda {
     width: 90%;
     height: 2em;
     background-color: rgb(204, 202, 202);
@@ -148,8 +150,85 @@
     color: black;
 }
 
+/* Search */
+#form-search{
+    margin: 3rem;
+}
+
+.container-4 {
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.container-4 input#search {
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-4 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-4 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-4 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-4 button.icon {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background: #232833;
+    height: 50px;
+    width: 50px;
+    color: #4f5b66;
+    opacity: 0;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease;
+}
+
+.container-4:hover button.icon,
+.container-4:active button.icon,
+.container-4:focus button.icon {
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.container-4:hover button.icon:hover {
+    background: white;
+}
+
 /* Promociones */
-.card{
+.card {
     background: rgb(125, 255, 212);
     width: 40em;
     height: 20em;
@@ -160,26 +239,29 @@
     text-align: center;
     justify-content: space-between;
 }
-.card h3{
+
+.card h3 {
     margin: 1rem;
 }
 
-.card-promo{
+.card-promo {
     margin: 1rem;
     background: rgb(176, 255, 225);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: .5rem;
     height: 85%;
 }
+
 /* Noticias */
-#noticias{
+#noticias {
     display: flex;
     flex-direction: row;
     height: 80vh;
     align-items: center;
     background-color: rgb(241, 241, 241);
 }
-.noticia{
+
+.noticia {
     width: 30%;
     height: 50vh;
     background-color: rgb(255, 255, 255);
@@ -190,7 +272,7 @@
 
 
 /* --------------HISTORIAL---------------------- */
-#historialheader{
+#historialheader {
     background-color: rgb(241, 240, 240);
     box-shadow: 0 0 10px rgb(206, 206, 206);
     width: 100%;
@@ -202,7 +284,7 @@
     font-size: 20px;
 }
 
-#historial{
+#historial {
     display: flex;
     flex-direction: column;
     height: 80vh;
@@ -213,7 +295,7 @@
     background-color: rgb(233, 226, 226);
 }
 
-.compra{
+.compra {
     width: 90%;
     height: 2em;
     background-color: rgb(204, 202, 202);
@@ -224,25 +306,28 @@
 
 /* contacto.html formulario */
 
-.container-form{
+.container-form {
     width: 100%;
     max-width: 1100px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     margin-top: 90px;
 }
-.container-form h2{
+
+.container-form h2 {
     margin-bottom: 15px;
     font-size: 35px
 }
-.container-form p{
+
+.container-form p {
     font-size: 17px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
-.container-form a{
+
+.container-form a {
     font-size: 17px;
     display: inline-block;
     text-decoration: none;
@@ -251,11 +336,14 @@
     color: black;
     font-weight: 700;
 }
-.container-form a i{
+
+.container-form a i {
     color: orange;
     margin-right: 10px;
 }
-.container-form form .campo, textarea{
+
+.container-form form .campo,
+textarea {
     width: 100%;
     padding: 15px 10px;
     font-size: 16px;
@@ -264,13 +352,15 @@
     border-radius: 3px;
     outline: 0px;
 }
-.container-form form textarea{
+
+.container-form form textarea {
     max-width: 530px;
     min-width: 530px;
     min-height: 140px;
     max-height: 150px;
 }
-.container-form .btn-enviar{
+
+.container-form .btn-enviar {
     padding: 15px;
     font-size: 16px;
     border: none;
@@ -281,13 +371,14 @@
     cursor: pointer;
     transition: all 300ms ease;
 }
-.container-form .btn-enviar:hover{
+
+.container-form .btn-enviar:hover {
     background: #e39403;
 }
 
 /* acerca.html sobre nosotros */
 
-#section-about{
+#section-about {
     width: 100vh;
     height: auto;
     display: flex;
@@ -296,11 +387,11 @@
     flex-direction: column;
 }
 
-#about-text{
+#about-text {
     font-size: 25px
 }
 
-#about-img img{
+#about-img img {
     width: 1000px;
     height: 600px;
 }
